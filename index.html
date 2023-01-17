@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/png" href="images/favicon2.png">
+    <link rel="stylesheet" href="style.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <title>Recherche de mots clés</title>
+    <meta name="description" content="Recherche de mots clés est un outil de recherche de mots clés pour les propriétaires de sites web et les blogueurs, mais aussi des partticuliers.
+                                      Il vous permet de trouver les mots clés les plus pertinents pour votre
+                                      contenu à l'interieur d'autres pages webs. Améliorez votre référencement avec notre outil facile à utiliser.">
+</head>
+<body>
+    <nav class="navbar justify-content-start navbar-expand-lg p-3" style="background-color: #2d3134;">
+        <div class="container-fluid ms-3">
+          <h1 class="navbar-brand" id="my-logo">Recherche de mots clés</h1>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link ms-5 " aria-current="page" id="active" href="#">Acceuil</a>
+              </li>
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
+
+      
+    <div class="container-fluid">
+      <h4><br>1- Qu'est ce que <a href="index.html">Recherche de mots clés</a> ?</h4>
+      <div id="main_class">
+        <p id="description" style="text-align: center;margin-top: 50px;">Recherche de mots clés est un outil de recherche de mots clés pour les propriétaires de sites web, les blogueurs, mais aussi des particuliers.
+        Il vous permet de trouver les mots clés les plus pertinents pour votre
+        contenu à l'interieur d'autres pages webs.<br><br> Améliorez votre référencement avec notre outil facile à utiliser.</p>
+        <img src="images/image_principal.jpg" class="img-fluid" alt="Image recherche">                        
+      </div>
+      <div id="main_class">
+      <h4><br>2- Comment utiliser <a href="index.html">Recherche de mots clés</a> ?</h4><br>
+      <img img src="images/how_to_use.png" class="img-fluid" alt="Image illustrant comment ituliser la plateforme de recherche"><br><br>
+    </div>  
+    <div id="reinitialized">
+    <input name="" id="my-submit-btn" class="btn btn-primary animate__animated animate__fadeInLeft" type="button" value="Réinitialiser" onclick="renitialize()">
+  </div>  
+    <form id="formId">
+            <div id="label-and-textarea-div">
+                <div class="row">
+                <div class="col-md-8 col-lg-8" id="div-of-textarea">
+                <textarea required class="form-control animate__animated animate__fadeInLeft col-lg-12" placeholder="Veuillez entrer votre texte" cols="400" rows="10" id="textarea"></textarea>
+                </div>
+                <div class = "col-md-6 col-lg-6" id="div-of-input">
+                    <input type="text" required placeholder="Mot à rechercher" class="form-control" id="word_to_search">
+                </div>
+                
+            </div>
+                <input name="" id="my-submit-btn" class="btn btn-primary animate__animated animate__fadeInLeft" type="button" onclick="findWord()" value="Valider">
+            </div>
+        </form>
+        <div class="result-class" id="results">
+            <h1 id="result-header"></h1>          
+        </div>
+        <p id="my_paragraph" style="margin-top: 30px;"></p>
+        <a href="https://wa.me//+221704891156/">
+          <button type="button" class="btn btn-success" style="margin-top:70px">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+<path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"></path>
+</svg>
+            WhatsApp
+          </button>
+        </a>
+
+      </div>
+      <div class="container-fluid">
+        
+        <a href="mailto:sosthenemounsambote14@gmail.com">
+    <button type="button" class="btn btn-primary" style="margin-top:20px">
+      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-at" viewBox="0 0 16 16">
+<path d="M2 2a2 2 0 0 0-2 2v8.01A2 2 0 0 0 2 14h5.5a.5.5 0 0 0 0-1H2a1 1 0 0 1-.966-.741l5.64-3.471L8 9.583l7-4.2V8.5a.5.5 0 0 0 1 0V4a2 2 0 0 0-2-2H2Zm3.708 6.208L1 11.105V5.383l4.708 2.825ZM1 4.217V4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v.217l-7 4.2-7-4.2Z"></path>
+<path d="M14.247 14.269c1.01 0 1.587-.857 1.587-2.025v-.21C15.834 10.43 14.64 9 12.52 9h-.035C10.42 9 9 10.36 9 12.432v.214C9 14.82 10.438 16 12.358 16h.044c.594 0 1.018-.074 1.237-.175v-.73c-.245.11-.673.18-1.18.18h-.044c-1.334 0-2.571-.788-2.571-2.655v-.157c0-1.657 1.058-2.724 2.64-2.724h.04c1.535 0 2.484 1.05 2.484 2.326v.118c0 .975-.324 1.39-.639 1.39-.232 0-.41-.148-.41-.42v-2.19h-.906v.569h-.03c-.084-.298-.368-.63-.954-.63-.778 0-1.259.555-1.259 1.4v.528c0 .892.49 1.434 1.26 1.434.471 0 .896-.227 1.014-.643h.043c.118.42.617.648 1.12.648Zm-2.453-1.588v-.227c0-.546.227-.791.573-.791.297 0 .572.192.572.708v.367c0 .573-.253.744-.564.744-.354 0-.581-.215-.581-.8Z"></path>
+</svg>
+      E-mail
+    </button>
+  </a>
+
+    
+  </div>
+  <div class="container-fluid">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

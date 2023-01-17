@@ -1,0 +1,118 @@
+body
+{
+    overflow-x: hidden;
+}
+a
+{
+    list-style: none;
+    text-decoration: none;
+}
+#my-links
+{
+    color: white;
+}
+#my-links:hover
+{
+    color: rgb(219, 232, 39);
+}
+#my-logo
+{
+    color: white;
+}
+#active
+{
+    color: rgb(219, 232, 39);
+}
+#textarea
+{
+    resize: none;
+}
+#label-and-textarea-div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+#my-label
+{
+font-size: 1.4em;
+font-weight: bold;
+}
+#my-submit-btn
+{
+    margin-top: 20px;
+    transition: all 1s;
+    
+}
+#my-submit-btn:hover
+{
+    background-color: blueviolet;
+}
+#div-of-textarea
+{
+    margin: auto;
+}
+#div-of-input
+{
+    margin: auto;
+}
+#word_to_search
+{
+    margin-top: 20px;
+}
+.text_for_informations
+{
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.3em;
+}
+.banner
+{
+    width: 1800px;
+    height: 200px;
+    background-color:  #2d3134;
+}
+.my_container
+{
+    margin-top: auto;
+    widows: 300px;
+}
+#main_class
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+@media only screen and (min-width: 600px) {
+    img {
+      width: 50%;
+    }
+  }
+  
+  @media only screen and (max-width: 600px) {
+    img {
+      width: 90%;
+    }
+  }
+#description
+{
+    margin-right: 20%;
+    text-align: center;
+    margin-left: 20%;
+}
+h4
+{
+    text-align: center;
+}
+@media only screen and (max-width: 600px) {
+    #description {
+    margin-right: 0;
+    margin-left: 0;
+    }
+    }
+#reinitialized
+{
+    display: flex;
+    justify-content: center;
+}
